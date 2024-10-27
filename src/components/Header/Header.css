@@ -1,0 +1,16 @@
+header {
+  display: flex;
+  flex-direction: row;
+  place-items: center;
+  gap: 26px;
+  padding: 0 24px;
+  background-color: #202020;
+  /* position: fixed; */
+}
+
+.nav-btns-box {
+  margin-left: auto;
+  /* margin-right: 20px; */
+  display: flex;
+  gap: 10px;
+}
