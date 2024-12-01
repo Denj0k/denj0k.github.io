@@ -1,5 +1,5 @@
 import "./Header.css";
-import Button from "../Button/Button";
+import NavButton from "../Button/NavButton";
 
 export default function Header({ navBtnOnClick, page }) {
   return (
@@ -8,21 +8,9 @@ export default function Header({ navBtnOnClick, page }) {
         <h3>Denj0k</h3>
       </div>
       <div className="nav-btns-box">
-        <Button isActive={page == "main"} onClick={() => navBtnOnClick("main")}>
-          Главная
-        </Button>
-        <Button
-          isActive={page == "useful"}
-          onClick={() => navBtnOnClick("useful")}
-        >
-          Полезное для уника
-        </Button>
-        <Button
-          isActive={page == "viteInitialPage"}
-          onClick={() => navBtnOnClick("viteInitialPage")}
-        >
-          Базовое окно
-        </Button>
+        <NavButton to="/">Main</NavButton>
+        <NavButton to="/helpful">Helpful</NavButton>
+        <NavButton to="/vite-page">Vite page</NavButton>
       </div>
     </header>
   );

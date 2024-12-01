@@ -5,7 +5,7 @@ export default function Button({ children, isActive, ...props }) {
     <button
       {...props}
       className={
-        isActive ? `${classes.button} ${classes.active}` : classes.button
+        `${props.className ? `${props.className} ` : ''}${isActive ? `${classes.button} ${classes.active}` : classes.button}`
       }
     >
       {children}
